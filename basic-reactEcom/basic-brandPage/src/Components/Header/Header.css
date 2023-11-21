@@ -1,0 +1,46 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: white;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-direction: flex-row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.4rem 9%;
+  }
+
+.header .logo {
+    /* margin-right: auto; */
+    color: var(--second-color);
+    font-size: 3rem;
+    font-weight: 700 !important;
+    font-family: 'Caveat', cursive;
+  }
+
+.header .tabs{
+    list-style: none;
+    display: flex;
+    flex-direction: flex-row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .header .tabs .tab {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-right: 45px;
+    color: var(--second-color);
+  }

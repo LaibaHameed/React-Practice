@@ -1,0 +1,66 @@
+.home {
+    min-height: 800px;
+    padding: 2rem 9%;
+    padding-top: 12rem;
+
+}
+
+.home .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.home .row .content {
+    flex: 2 1 45rem;
+}
+
+
+.shoe{
+    max-width: 60rem;
+}
+
+.home .row .content h3 {
+    margin-top: 3rem;
+    font-size: 8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: var(--main-color);
+    text-transform: uppercase;
+    line-height: 6rem;
+}
+.home .row .content .para{
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+    max-width: 35rem;
+    color: rgb(48, 47, 47);
+}
+
+.home .row .content .btn{
+    margin-top: 2.5rem;
+}
+
+.imgs{
+    display: flex;
+    flex-direction: flex-row;
+    align-items: center;
+    font-size: 1.4rem;
+    color: rgb(48, 47, 47);
+    margin-top: 2rem;
+}
+
+.icon{
+    width: 3rem;
+    margin-left: 1.5rem;
+}
+
+.home .row .image {
+    flex: 1 1 42rem;
+    text-align: center;
+}
+
+.home .row .image > img {
+    height: 40rem;
+}
+
