@@ -5,7 +5,6 @@ import './Home.css'
 const Home = () => {
   return (
     <section className="home">
-    <div className="row">
       <div className="content">
         <h3 className="shoe">
         YOUR FEET
@@ -39,12 +38,12 @@ const Home = () => {
 
       <div className="image">
         <img
-          src="shoes.png"
+          src="hero-image.png"
+          // src="shoes.png"
           className="main-img"
           alt=""
         />
       </div>
-    </div>
   </section>
   )
 }
