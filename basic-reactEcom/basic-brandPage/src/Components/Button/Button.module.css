@@ -1,0 +1,46 @@
+.div{
+    display: inline-block;
+}
+
+.btn {
+    padding: 0.9rem 1.5rem;
+    color: #ffffffff !important;
+    background: var(--main-color);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0.9rem;
+    outline: none;
+    border: 2px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .btn:hover {
+    border-radius: var(--border-radius-hover);
+    background: var(--main-color);
+  }
+
+  .btn2 {
+    padding: 0.9rem 1.5rem;
+    color:var(--main-color) !important;
+    background: transparent;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0.9rem;
+    outline: none;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--main-color);
+}
+
+.btn2:hover {
+    border-radius: var(--border-radius-hover);
+    /* background: var(--main-color); */
+  }

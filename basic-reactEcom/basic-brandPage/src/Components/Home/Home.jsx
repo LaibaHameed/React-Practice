@@ -1,46 +1,43 @@
 import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
-import './Home.css'
+import styles from './Home.module.css'
+import Button from '../Button/Button'
+import { FaOpencart } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <section className="home">
-      <div className="content">
-        <h3 className="shoe">
+    <section className={`${styles.home}`}>
+      <div className={`${styles.content}`}>
+        <h3 className={`${styles.shoe}`}>
         YOUR FEET
         DESERVE <br/>
         THE BEST</h3>
-        <p className='para'>
+        <p className={`${styles.para}`}>
         YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR SHOES.YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR SHOES.
         </p>
-        <div className='btns'>
-        <Link to="/" className="btn">
-          Buy Now
-        </Link>
-        <Link to="/" className="btn">
-          Category
-        </Link>
+        <div className={`${styles.btns}`}>
+        <Button icon={<FaOpencart fontSize="20px" padding-left="3px"/>} text="Buy Now"/>
+        <Button text="Category" isOutline= {true}/>
         </div>
-        <div className='imgs'>
+        <div className={`${styles.imgs}`}>
         also available on 
         <img
-              src="amazon.png"
-              className="icon"
+              src="/Images/amazon.png"
+              className={`${styles.icon}`}
               alt="amazon"
         /> 
         <img
-              src="Flipkart.jpeg"
-              className="icon"
+              src="/Images/Flipkart.jpeg"
+              className={`${styles.icon}`}
               alt="flipkart"
         />
         </div>
       </div>
 
-      <div className="image">
+      <div className={`${styles.image}`}>
         <img
-          src="hero-image.png"
+          src="/Images/hero-image.png"
           // src="shoes.png"
-          className="main-img"
+          className={`${styles.mainImg}`}
           alt=""
         />
       </div>

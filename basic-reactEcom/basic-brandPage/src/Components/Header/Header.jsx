@@ -1,21 +1,22 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import './Header.css'
+import styles from './Header.module.css'
+import Button from '../Button/Button'
 
 const Header = () => {
   return (
-    <section className='header'>
-        <span className='logo'>
+    <section className={`${styles.header}`}>
+        <span className={`${styles.logo}`}>
         Nike
         </span>
-        <div className='tabs'>
-            <NavLink className='tab' to="/">Home</NavLink>
-            <NavLink className='tab' to="/">Location</NavLink>
-            <NavLink className='tab' to="/">About</NavLink>
-            <NavLink className='tab' to="/">Contact</NavLink>
+        <div className={`${styles.tabs}`}>
+            <NavLink className={`${styles.tab}`} to="/">Home</NavLink>
+            <NavLink className={`${styles.tab}`} to="/">Location</NavLink>
+            <NavLink className={`${styles.tab}`} to="/">About</NavLink>
+            <NavLink className={`${styles.tab}`} to="/">Contact</NavLink>
         </div>
-        <div className='login'>
-            <button className='btn'>Login</button>
+        <div className={`${styles.login}`}>
+            <Button text="Login"/>
         </div>
 
     </section>
