@@ -1,9 +1,30 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
-const RoleDice = () => {
+const RoleDice = ({currentDice, roleDice}) => {
   return (
-    <div>RoleDice</div>
+    <DiceContainer>
+      <div className="dice" onClick={roleDice}>
+        <img src={`dice/dice_${currentDice}.png`} alt="dice 1" />
+      </div>
+      <p>click on dice to roll</p>
+    </DiceContainer>
   )
 }
 
-export default RoleDice
+export default RoleDice;
+
+const DiceContainer = styled.div`
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .dice {
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 24px;
+  }
+`;

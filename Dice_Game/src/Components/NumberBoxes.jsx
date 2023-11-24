@@ -1,30 +1,38 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-const NumberBoxes = ({
-    selectNum, setSelectNum, error, seterror
-}) => {
-    const numbers = [1,2,3,4,5,6];
-    const numSelectorHandler=(value) =>{
-        setSelectNum(value);
-        seterror("")
-    }
+const NumberBoxes = ({ selectNum, setSelectNum, error, seterror }) => {
+  const numSelectorHandler = (value) => {
+    setSelectNum(value);
+    seterror("");
+  };
+  const numbers = [1, 2, 3, 4, 5, 6];
   return (
-   
     <NumberSelectorContainer>
-    <p className="error">{error}</p>
+      <p className="error">{error}</p>
       <div className="flex">
-      {
-        numbers.map((value, i)=>{
-            <Box isSelected={value === selectNum} key={i} onClick={()=> numSelectorHandler(value)}>{value}</Box>
-        })
-      }
+      {/* {numbers.map((value, i) => (
+          <Box
+            isSelected={value === selectNum}
+            key={i}
+            onClick={() => numSelectorHandler(value)}
+          >
+            {value}
+          </Box>
+        ))} */}
+        {numbers.map((value, i) => {
+          return <Box
+            isSelected={value === selectNum}
+            key={i}
+            onClick={() => numSelectorHandler(value)}
+          >{value}</Box>
+        })}
       </div>
     </NumberSelectorContainer>
-  )
-}
+  );
+};
 
-export default NumberBoxes
+export default NumberBoxes;
 
 const NumberSelectorContainer = styled.div`
   display: flex;
