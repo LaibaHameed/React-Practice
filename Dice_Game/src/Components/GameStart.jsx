@@ -73,10 +73,10 @@ const GameStart = () => {
         <OutlineButton onClick={resetScore}>Reset Score</OutlineButton>
         <Button onClick={ruleShowHandler}>
           {" "}
-          {showRules ? "Hide" : "Show"} Rules{" "}
+          {showRules ? "Hide" : "Show"} Rules
         </Button>
       </div>
-      {showRules && <Rules />}
+      {showRules && <Rules ruleShowHandler={ruleShowHandler} />}
     </MainContainer>
   );
 };
