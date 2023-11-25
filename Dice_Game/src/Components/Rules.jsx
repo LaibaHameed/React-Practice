@@ -13,6 +13,8 @@ const Rules = () => {
           will get same point as dice{" "}
         </li>
         <li>if you get wrong guess then 2 point will be dedcuted </li>
+        <li>if you get 10 points you win</li>
+        <li>if you get -10 points you will lose </li>
       </ol>
     </RulesContainer>
   )
