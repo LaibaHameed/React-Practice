@@ -11,5 +11,6 @@ using:
 tailwind css 
 firebase
 react-icons
-
+formik (for react Forms)
+toastify
 
